@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Departamentos;
 use Illuminate\Http\Request;
-
+use Image;
 
 class DepartamentosController extends Controller
 {
@@ -53,16 +53,43 @@ class DepartamentosController extends Controller
 
         if ($request->hasFile('selloimg') && $request->hasFile('firmaimg')) {
             $image = $request->file('selloimg');
-            $name = 'sello-' . $request->nombreDepartamento . '.' . $image->getClientOriginalExtension();
+            $mask = Image::make($image)
+                ->contrast(100)
+                ->contrast(50)
+                ->trim('top-left', null, 40)
+                ->invert(); // invert it to use as a mask
+
+            $new_image = Image::canvas($mask->width(), $mask->height(), '#061ABB')
+                ->mask($mask)
+                ->resize(512, 512, function ($constraint) {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                })
+                ->encode('png', 100);
+            $name = 'sello-' . $request->nombreDepartamento . '.png';
             $destinationPath = public_path('/img');
-            $image->move($destinationPath, $name);
+            $new_image->save($destinationPath . '/' . $name);
             $request['sello'] = $name;
 
             $imagefirma = $request->file('firmaimg');
-            $namefirma = 'firma-' . $request->nombreDepartamento . '.' . $imagefirma->getClientOriginalExtension();
-            $destinationPathfirma = public_path('/img');
-            $imagefirma->move($destinationPathfirma, $namefirma);
-            $request['firma'] = $namefirma;
+            $maskfirma = Image::make($imagefirma)
+                ->contrast(100)
+                ->contrast(50)
+                ->trim('top-left', null, 40)
+                ->invert(); // invert it to use as a mask
+
+            $new_imageFirma = Image::canvas($maskfirma->width(), $maskfirma->height(), '#061ABB')
+                ->mask($maskfirma)
+                ->resize(512, 512, function ($constraint) {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                })
+                ->encode('png', 100);
+            $nameFirma = 'firma-' . $request->nombreDepartamento . '.png';
+            $destinationPath = public_path('/img');
+            $new_imageFirma->save($destinationPath . '/' . $nameFirma);
+            $request['firma'] = $nameFirma;
+
 
             Departamentos::create($request->all());
             return redirect()->route('departamentos.index')->with('mensaje', 'departamento agregado con exito');
@@ -125,23 +152,49 @@ class DepartamentosController extends Controller
             unlink($file_old);
         }
 
-        if ($request->hasFile('selloimg')){
-        $image = $request->file('selloimg');
-        $name = 'sello-' . $request->nombreDepartamento . '.' . $image->getClientOriginalExtension();
-        $destinationPath = public_path('/img');
-        $image->move($destinationPath, $name);
-        $request['sello'] = $name;
-        $departamento->update(['sello' => $name]);
-    }
+        if ($request->hasFile('selloimg')) {
+            $image = $request->file('selloimg');
+            $mask = Image::make($image)
+                ->contrast(100)
+                ->contrast(50)
+                ->trim('top-left', null, 40)
+                ->invert(); // invert it to use as a mask
+
+            $new_image = Image::canvas($mask->width(), $mask->height(), '#061ABB')
+                ->mask($mask)
+                ->resize(512, 512, function ($constraint) {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                })
+                ->encode('png', 100);
+            $name = 'sello-' . $request->nombreDepartamento . '.png';
+            $destinationPath = public_path('/img');
+            $new_image->save($destinationPath . '/' . $name);
+            $request['sello'] = $name;
+            $departamento->update(['sello' => $name]);
+        }
 
         if ($request->hasFile('firmaimg')) {
 
             $imagefirma = $request->file('firmaimg');
-            $namefirma = 'firma-' . $request->nombreDepartamento . '.' . $imagefirma->getClientOriginalExtension();
-            $destinationPathfirma = public_path('/img');
-            $imagefirma->move($destinationPathfirma, $namefirma);
-            $request['firma'] = $namefirma;
-            $departamento->update(['firma' => $namefirma]);
+            $maskfirma = Image::make($imagefirma)
+                ->contrast(100)
+                ->contrast(50)
+                ->trim('top-left', null, 40)
+                ->invert(); // invert it to use as a mask
+
+            $new_imageFirma = Image::canvas($maskfirma->width(), $maskfirma->height(), '#061ABB')
+                ->mask($maskfirma)
+                ->resize(512, 512, function ($constraint) {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                })
+                ->encode('png', 100);
+            $nameFirma = 'firma-' . $request->nombreDepartamento . '.png';
+            $destinationPath = public_path('/img');
+            $new_imageFirma->save($destinationPath . '/' . $nameFirma);
+            $request['firma'] = $nameFirma;
+            $departamento->update(['firma' => $nameFirma]);
         }
 
 
@@ -166,10 +219,17 @@ class DepartamentosController extends Controller
     {
         //
         $departamento = Departamentos::find($id);
+        //code for remove old file
+
 
         if ($departamento != null) {
 
             if ($departamento->delete()) {
+                $file_old = public_path('/img/') . $departamento->sello;
+                unlink($file_old);
+
+                $file_old = public_path('/img/') . $departamento->firma;
+                unlink($file_old);
                 return redirect()->route('departamentos.index')->with('mensaje', 'departamento eliminado correctamente');
 
             }

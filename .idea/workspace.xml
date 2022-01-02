@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9535d496-4296-449c-9859-85dcd22d9472" name="Changes" comment="Changes in adeudos and departamentos controllers or views">
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/provides.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/AbstractColor.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/AbstractDecoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/AbstractDriver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/AbstractEncoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/AbstractFont.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/AbstractShape.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/AbstractCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/Argument.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/ChecksumCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/CircleCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/EllipseCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/ExifCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/IptcCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/LineCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/OrientateCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/PolygonCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/PsrResponseCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/RectangleCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/ResponseCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/StreamCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Commands/TextCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Constraint.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Exception/ImageException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Exception/InvalidArgumentException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Exception/MissingDependencyException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Exception/NotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Exception/NotReadableException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Exception/NotSupportedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Exception/NotWritableException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Exception/RuntimeException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Facades/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/File.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Filters/DemoFilter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Filters/FilterInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Color.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/BackupCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/BlurCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/BrightnessCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ColorizeCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ContrastCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/CropCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/DestroyCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/FillCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/FitCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/FlipCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/GammaCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/GetSizeCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/GreyscaleCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/HeightenCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/InsertCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/InterlaceCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/InvertCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/LimitColorsCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/MaskCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/OpacityCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/PickColorCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/PixelCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/PixelateCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ResetCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ResizeCanvasCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/ResizeCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/RotateCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/SharpenCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/TrimCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Commands/WidenCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Encoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Font.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/CircleShape.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/EllipseShape.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/LineShape.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/PolygonShape.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Gd/Shapes/RectangleShape.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/ImageManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/ImageManagerStatic.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/ImageServiceProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravel4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLaravelRecent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLeague.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/ImageServiceProviderLumen.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Color.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BackupCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BlurCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/BrightnessCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ColorizeCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ContrastCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/CropCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/DestroyCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ExifCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FillCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FitCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/FlipCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GammaCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GetSizeCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/GreyscaleCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/HeightenCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InsertCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InterlaceCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/InvertCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/LimitColorsCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/MaskCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/OpacityCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PickColorCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PixelCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/PixelateCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResetCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResizeCanvasCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/ResizeCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/RotateCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/SharpenCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/TrimCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Commands/WidenCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Decoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Driver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Encoder.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Font.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/CircleShape.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/EllipseShape.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/LineShape.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/PolygonShape.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Imagick/Shapes/RectangleShape.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Point.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/Intervention/Image/Size.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/intervention/image/src/config/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepartamentosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepartamentosController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/sello-Departamento Academico 2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sello-Departamento Academico 2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php81" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/infyomlabs/laravel-ui-stisla" />
+      <path value="$PROJECT_DIR$/vendor/infyomlabs/laravel-generator-helpers" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1xlsfBY8lFprpy45NYQB5lBR5OL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="HOTFIX_customHotfixCommitMessage_text" value="Tagging hotfix %name%" />
+    <property name="RELEASE_customTagCommitMessage_text" value="Tagging version %name%" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="C:\xampp\htdocs\adeudosRoles\resources\views\dep_desarrolloacademico" />
+      <recent name="C:\xampp\htdocs\adeudosRoles\resources\views\c_computo" />
+      <recent name="C:\xampp\htdocs\adeudosRoles\resources\views\c_informacion" />
+      <recent name="C:\xampp\htdocs\adeudosRoles\resources\views\inicio" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/css" />
+      <recent name="$PROJECT_DIR$/resources/js" />
+      <recent name="C:\xampp\htdocs\adeudosRoles\resources\views\inicio" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="s" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <option name="commandLineParameters" value="http://127.0.0.1:8000/" />
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
+      <option name="script" value="post-autoload-dump" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" options="http://127.0.0.1:8000/" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9535d496-4296-449c-9859-85dcd22d9472" name="Changes" comment="" />
+      <created>1630941111780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1630941111780</updated>
+      <workItem from="1630941113617" duration="21528000" />
+      <workItem from="1630975193478" duration="883000" />
+      <workItem from="1631035745746" duration="13451000" />
+      <workItem from="1631060771686" duration="1660000" />
+      <workItem from="1631062453810" duration="5538000" />
+      <workItem from="1631106304396" duration="11284000" />
+      <workItem from="1631127241066" duration="9015000" />
+      <workItem from="1631198982858" duration="15495000" />
+      <workItem from="1631215887465" duration="1315000" />
+      <workItem from="1631217639869" duration="1745000" />
+      <workItem from="1631219442654" duration="261000" />
+      <workItem from="1631219716961" duration="812000" />
+      <workItem from="1631220544359" duration="1225000" />
+      <workItem from="1631221801109" duration="51000" />
+      <workItem from="1631221898577" duration="3601000" />
+      <workItem from="1631232415923" duration="5991000" />
+      <workItem from="1631240836810" duration="4245000" />
+      <workItem from="1631472572127" duration="1518000" />
+      <workItem from="1631494827402" duration="597000" />
+      <workItem from="1631629449862" duration="524000" />
+      <workItem from="1631630116890" duration="7796000" />
+      <workItem from="1631645308780" duration="5231000" />
+      <workItem from="1631724355258" duration="1844000" />
+      <workItem from="1631890899988" duration="1393000" />
+      <workItem from="1631906396283" duration="3987000" />
+      <workItem from="1632161683762" duration="7641000" />
+      <workItem from="1632174717788" duration="3368000" />
+      <workItem from="1632238918180" duration="2075000" />
+      <workItem from="1632257326247" duration="5044000" />
+      <workItem from="1632322436154" duration="6762000" />
+      <workItem from="1632406650974" duration="3385000" />
+      <workItem from="1633359714109" duration="1090000" />
+      <workItem from="1633380890019" duration="2179000" />
+      <workItem from="1633452301842" duration="6051000" />
+      <workItem from="1633541531961" duration="5520000" />
+      <workItem from="1633718713822" duration="1917000" />
+      <workItem from="1633802888242" duration="366000" />
+      <workItem from="1634568166394" duration="8744000" />
+      <workItem from="1634590103587" duration="1055000" />
+      <workItem from="1634592626135" duration="4930000" />
+      <workItem from="1635266774658" duration="1150000" />
+      <workItem from="1636387579191" duration="3339000" />
+      <workItem from="1636468867460" duration="15368000" />
+      <workItem from="1636555370398" duration="18929000" />
+      <workItem from="1636642165209" duration="1191000" />
+      <workItem from="1636648204860" duration="7282000" />
+      <workItem from="1636748673623" duration="8127000" />
+      <workItem from="1637343056329" duration="1066000" />
+      <workItem from="1637344886717" duration="1909000" />
+      <workItem from="1637346868309" duration="1060000" />
+      <workItem from="1637349012975" duration="9263000" />
+      <workItem from="1637375792019" duration="262000" />
+      <workItem from="1637681153403" duration="1213000" />
+      <workItem from="1637686832886" duration="5270000" />
+      <workItem from="1637789433339" duration="34048000" />
+      <workItem from="1638307071691" duration="3123000" />
+      <workItem from="1638392061794" duration="23613000" />
+      <workItem from="1640912775312" duration="15598000" />
+    </task>
+    <task id="LOCAL-00001" summary="SeederTablePermisos">
+      <created>1631037384281</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1631037384281</updated>
+    </task>
+    <task id="LOCAL-00002" summary="blog migration was added">
+      <created>1631108233582</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1631108233582</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added roles and views edit from roles">
+      <created>1631205976473</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1631205976473</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor table">
+      <created>1631206501792</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1631206501792</updated>
+    </task>
+    <task id="LOCAL-00005" summary="view loggin added">
+      <created>1631221974546</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631221974546</updated>
+    </task>
+    <task id="LOCAL-00006" summary="view blogs added">
+      <created>1631225541225</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631225541225</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added style.css, added views blogs,fixed home and added fixed controllers.">
+      <created>1631241951283</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631241951283</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add database,fixed views,added seeder superadmistrator">
+      <created>1631244962018</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631244962018</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added view login">
+      <created>1631907237239</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631907237239</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added view">
+      <created>1631911752488</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1631911752488</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added navbar">
+      <created>1632243179848</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1632243179848</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add controller">
+      <created>1632344095370</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1632344095370</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add controller c_informacion">
+      <created>1632345996382</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1632345996382</updated>
+    </task>
+    <task id="LOCAL-00014" summary="n">
+      <created>1633462065255</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1633462065255</updated>
+    </task>
+    <task id="LOCAL-00015" summary="n">
+      <created>1633464783237</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1633464783237</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added model and views c_info">
+      <created>1634582935078</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1634582935078</updated>
+    </task>
+    <task id="LOCAL-00017" summary="register students">
+      <created>1636497405138</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1636497405138</updated>
+    </task>
+    <task id="LOCAL-00018" summary="..">
+      <created>1637358961197</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1637358961197</updated>
+    </task>
+    <task id="LOCAL-00019" summary="...">
+      <created>1637711369204</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1637711369204</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Changes in adeudos and departamentos controllers or views">
+      <created>1641071120839</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1641071120839</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="SeederTablePermisos" />
+    <MESSAGE value="blog migration was added" />
+    <MESSAGE value="added roles and views edit from roles" />
+    <MESSAGE value="refactor table" />
+    <MESSAGE value="view loggin added" />
+    <MESSAGE value="view blogs added" />
+    <MESSAGE value="added style.css, added views blogs,fixed home and added fixed controllers." />
+    <MESSAGE value="add database,fixed views,added seeder superadmistrator" />
+    <MESSAGE value="added view login" />
+    <MESSAGE value="added view" />
+    <MESSAGE value="added navbar" />
+    <MESSAGE value="add controller" />
+    <MESSAGE value="add controller c_informacion" />
+    <MESSAGE value="n" />
+    <MESSAGE value="added model and views c_info" />
+    <MESSAGE value="register students" />
+    <MESSAGE value=".." />
+    <MESSAGE value="..." />
+    <MESSAGE value="Changes in adeudos and departamentos controllers or views" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes in adeudos and departamentos controllers or views" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="443" y="247" key="#Notifications" timestamp="1641071291321">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state x="443" y="247" key="#Notifications/0.25.1440.791@0.25.1440.791" timestamp="1641071291321" />
+    <state x="445" y="225" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639291952311">
+      <screen x="0" y="25" width="1440" height="794" />
+    </state>
+    <state x="445" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.794@0.25.1440.794" timestamp="1639291952311" />
+    <state x="458" y="180" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1641024973061">
+      <screen x="0" y="25" width="1440" height="797" />
+    </state>
+    <state x="458" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.788@0.25.1440.788" timestamp="1638565800540" />
+    <state x="458" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.791@0.25.1440.791" timestamp="1638304805693" />
+    <state x="458" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.794@0.25.1440.794" timestamp="1639292498996" />
+    <state x="458" y="180" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.797@0.25.1440.797" timestamp="1641024973061" />
+    <state x="541" y="348" key="NewPhpFileDialog" timestamp="1639292077965">
+      <screen x="0" y="25" width="1440" height="794" />
+    </state>
+    <state x="541" y="345" key="NewPhpFileDialog/0.25.1440.788@0.25.1440.788" timestamp="1638076863123" />
+    <state x="541" y="346" key="NewPhpFileDialog/0.25.1440.791@0.25.1440.791" timestamp="1638076618461" />
+    <state x="541" y="348" key="NewPhpFileDialog/0.25.1440.794@0.25.1440.794" timestamp="1639292077965" />
+    <state x="541" y="349" key="NewPhpFileDialog/0.25.1440.797@0.25.1440.797" timestamp="1638157979450" />
+    <state x="320" y="143" key="Vcs.Push.Dialog.v2" timestamp="1641071501523">
+      <screen x="0" y="25" width="1440" height="791" />
+    </state>
+    <state x="320" y="143" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1641071501523" />
+  </component>
+</project>
