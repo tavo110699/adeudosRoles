@@ -14,7 +14,7 @@
 
 
                             @can('crear-blog')
-                                <a class="btn btn-warning" href="{{ route('departamentos.create') }}">Nuevo departamento (ocultar al final)</a>
+                                <a class="btn btn-warning" href="{{ route('departamentos.create') }}" hidden>Nuevo departamento (ocultar al final)</a>
                             @endcan
 
 
@@ -40,7 +40,7 @@
                                                 @csrf
                                                 @method('DELETE')
                                                 @can('borrar-blog')
-                                                    <button type="submit" class="btn btn-danger">Borrar (ocultar al final)</button>
+                                                    <button type="submit" class="btn btn-danger" hidden>Borrar (ocultar al final)</button>
                                                 @endcan
                                             </form>
                                         </td>
