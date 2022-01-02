@@ -55,6 +55,38 @@ class AdeudosController extends Controller
         return $pdf->download($name);
     }
 
+    public function printPDFtitulacion($id)
+    {
+        $infoAlumno = Alumnos::find($id);
+        $departamentos = Departamentos::all();
+        $today = Carbon::now();
+        $meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+        $fecha = Carbon::parse($today);
+        $mes = $meses[($fecha->format('n')) - 1];
+        $today2 = $fecha->format('d') . ' de ' . $mes . ' de ' . $fecha->format('Y');
+
+        $pdf = \PDF::loadView('pdf.titulacion', compact( 'today2', 'infoAlumno', 'departamentos'));
+        $pdf->setPaper('letter', 'portrait');
+        $name = 'Titulacion-'. $infoAlumno->NumControl . '.pdf';
+        return $pdf->download($name);
+    }
+
+    public function printPDFposgrado($id)
+    {
+        $infoAlumno = Alumnos::find($id);
+        $departamentos = Departamentos::all();
+        $today = Carbon::now();
+        $meses = array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+        $fecha = Carbon::parse($today);
+        $mes = $meses[($fecha->format('n')) - 1];
+        $today2 = $fecha->format('d') . ' de ' . $mes . ' de ' . $fecha->format('Y');
+
+        $pdf = \PDF::loadView('pdf.posgrado', compact( 'today2', 'infoAlumno', 'departamentos'));
+        $pdf->setPaper('letter', 'portrait');
+        $name = 'Posgrado-'. $infoAlumno->NumControl . '.pdf';
+        return $pdf->download($name);
+    }
+
     /**
      * Store a newly created resource in storage.
      *

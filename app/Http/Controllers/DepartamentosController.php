@@ -53,15 +53,17 @@ class DepartamentosController extends Controller
 
         if ($request->hasFile('selloimg') && $request->hasFile('firmaimg')) {
             $image = $request->file('selloimg');
+            $width = Image::make($image)->width();
+            $height = Image::make($image)->height();
             $mask = Image::make($image)
                 ->contrast(100)
                 ->contrast(50)
                 ->trim('top-left', null, 40)
                 ->invert(); // invert it to use as a mask
 
-            $new_image = Image::canvas($mask->width(), $mask->height(), '#061ABB')
+            $new_image = Image::canvas($mask->width(), $mask->height(), '#000000')
                 ->mask($mask)
-                ->resize(512, 512, function ($constraint) {
+                ->resize($width, $height, function ($constraint) {
                     $constraint->aspectRatio();
                     $constraint->upsize();
                 })
@@ -71,7 +73,10 @@ class DepartamentosController extends Controller
             $new_image->save($destinationPath . '/' . $name);
             $request['sello'] = $name;
 
+
             $imagefirma = $request->file('firmaimg');
+            $width = Image::make($imagefirma)->width();
+            $height = Image::make($imagefirma)->height();
             $maskfirma = Image::make($imagefirma)
                 ->contrast(100)
                 ->contrast(50)
@@ -80,7 +85,7 @@ class DepartamentosController extends Controller
 
             $new_imageFirma = Image::canvas($maskfirma->width(), $maskfirma->height(), '#061ABB')
                 ->mask($maskfirma)
-                ->resize(512, 512, function ($constraint) {
+                ->resize($width, $height, function ($constraint) {
                     $constraint->aspectRatio();
                     $constraint->upsize();
                 })
@@ -154,6 +159,8 @@ class DepartamentosController extends Controller
 
         if ($request->hasFile('selloimg')) {
             $image = $request->file('selloimg');
+            $width = Image::make($image)->width();
+            $height = Image::make($image)->height();
             $mask = Image::make($image)
                 ->contrast(100)
                 ->contrast(50)
@@ -162,7 +169,7 @@ class DepartamentosController extends Controller
 
             $new_image = Image::canvas($mask->width(), $mask->height(), '#061ABB')
                 ->mask($mask)
-                ->resize(512, 512, function ($constraint) {
+                ->resize($width, $height, function ($constraint) {
                     $constraint->aspectRatio();
                     $constraint->upsize();
                 })
@@ -177,6 +184,8 @@ class DepartamentosController extends Controller
         if ($request->hasFile('firmaimg')) {
 
             $imagefirma = $request->file('firmaimg');
+            $width = Image::make($imagefirma)->width();
+            $height = Image::make($imagefirma)->height();
             $maskfirma = Image::make($imagefirma)
                 ->contrast(100)
                 ->contrast(50)
@@ -185,7 +194,7 @@ class DepartamentosController extends Controller
 
             $new_imageFirma = Image::canvas($maskfirma->width(), $maskfirma->height(), '#061ABB')
                 ->mask($maskfirma)
-                ->resize(512, 512, function ($constraint) {
+                ->resize($width, $height, function ($constraint) {
                     $constraint->aspectRatio();
                     $constraint->upsize();
                 })
@@ -203,8 +212,6 @@ class DepartamentosController extends Controller
                 return redirect()->route('departamentos.index');
             }
         }
-
-
         return redirect()->route('departamentos.index')->with('mensaje', 'departamento agregado con exito');
 
     }

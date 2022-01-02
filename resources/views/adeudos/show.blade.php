@@ -160,8 +160,8 @@
                                             @else
                                                 <p>Unicamente podra marcar como adeudo saldado el usuario quien
                                                     registro</p>
-                                            @endif
-                                        @endcan
+                                    @endif
+                                    @endcan
                                 </tr>
                                 @endforeach
                                 </tr>
@@ -206,24 +206,22 @@
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     @php
-
-                        if(!$adeudos->isEmpty()){
-                            echo'<p>Se permitira descargar el pdf al saldar los adudos correspondientes</p>';
-                                              } else {
-                          echo '<a class="btn btn-success" href="")><i class="fas fa-arrow-circle-down"></i> Descargar documento</a>';
-
-                        }
+                        $route = route('download-titulacion', $alumnos->id);
+                                              if(!$adeudos->isEmpty()){
+                                                  echo'<p>Se permitira descargar el pdf al saldar los adudos correspondientes</p>';
+                                                                    } else {
+                                                echo '<a class="btn btn-success" href="'.$route.'")><i class="fas fa-arrow-circle-down"></i> Descargar documento</a>';
+                                              }
                     @endphp
                 </div>
                 <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                     @php
-
-                        if(!$adeudos->isEmpty()){
-                            echo'<p>Se permitira descargar el pdf al saldar los adudos correspondientes</p>';
-                                              } else {
-                          echo '<a class="btn btn-success" href="")><i class="fas fa-arrow-circle-down"></i> Descargar documento</a>';
-
-                        }
+                        $route = route('download-posgrado', $alumnos->id);
+                                              if(!$adeudos->isEmpty()){
+                                                  echo'<p>Se permitira descargar el pdf al saldar los adudos correspondientes</p>';
+                                                                    } else {
+                                                echo '<a class="btn btn-success" href="'.$route.'")><i class="fas fa-arrow-circle-down"></i> Descargar documento</a>';
+                                              }
                     @endphp
                 </div>
             </div>
