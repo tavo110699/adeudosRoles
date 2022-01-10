@@ -3,7 +3,7 @@
 @section('content')
     <section class="section">
         <div class="section-header">
-            <h3 class="page__heading">CONSTANCIA DE NO ADEUDOS</h3>
+            <h3 class="page__heading">BIENVENIDO A LA LIBERACIÓN DE CONSTANCIA DE NO ADEUDOS</h3>
         </div>
             <div class="row">
                 <div class="col-lg-12">

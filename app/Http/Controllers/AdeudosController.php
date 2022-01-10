@@ -10,6 +10,12 @@ use Illuminate\Support\Carbon;
 
 class AdeudosController extends Controller
 {
+    function __construct(){
+        $this->middleware('permission:ver-blog|crear-blog|editar-blog|borrar-blog')->only('index');
+        $this->middleware('permission:crear-blog', ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-blog', ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-blog', ['only' => ['destroy']]);
+    }
     /**
      * Display a listing of the resource.
      *

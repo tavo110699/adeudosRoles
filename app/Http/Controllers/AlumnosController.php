@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\createProject;
+use App\Mail\registroAlumno;
 use App\Models\Alumnos;
 use App\Models\carreras;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class AlumnosController extends Controller
 {
@@ -58,6 +61,9 @@ class AlumnosController extends Controller
 
         Alumnos::create($request->all());
 
+        $email = new registroAlumno;
+
+        Mail::to('gustavo.marlic@gmail.com')->send($email);
         return redirect()->route('alumnos.index');
     }
 

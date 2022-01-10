@@ -10,3 +10,4 @@ class Departamentos extends Model
     use HasFactory;
     protected $fillable = ['nombreDepartamento','nombreEncargado','apellidoPEncargado','apellidoMEncargado','sello','firma'];
 }
+

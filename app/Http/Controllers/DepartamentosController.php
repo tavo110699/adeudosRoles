@@ -167,7 +167,7 @@ class DepartamentosController extends Controller
                 ->trim('top-left', null, 40)
                 ->invert(); // invert it to use as a mask
 
-            $new_image = Image::canvas($mask->width(), $mask->height(), '#061ABB')
+            $new_image = Image::canvas($mask->width(), $mask->height(), '#000000')
                 ->mask($mask)
                 ->resize($width, $height, function ($constraint) {
                     $constraint->aspectRatio();

@@ -145,7 +145,7 @@
                                     <td>{{$adeudo->created_at  }}</td>
                                     <td>
 
-                                        @can('borrar-alumnos')
+                                        @can('borrar-blog')
                                             @php
                                                 $userRegister = $adeudo->idUser;
                                                 $userLogin = auth()->user()->id;

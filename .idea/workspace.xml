@@ -5,43 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9535d496-4296-449c-9859-85dcd22d9472" name="Changes" comment="Changes in adeudos and departamentos controllers or views">
-      <change afterPath="$PROJECT_DIR$/public/img/firma-Centro de información.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/firma-Departamento Extraescolar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/firma-Departamento Recursos Financieros.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/firma-Departamento Servicios Escolares.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/firma-Postgrado e investigación.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/firma-Recursos Materiales.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/firma-Seguimiento a egresados.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/membrete-itsta.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/sello-Centro de información.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/sello-Departamento Extraescolar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/sello-Departamento Recursos Financieros.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/sello-Departamento Servicios Escolares.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/sello-Postgrado e investigación.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/sello-Recursos Materiales.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/sello-Seguimiento a egresados.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdeudosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdeudosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DepartamentosController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DepartamentosController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/firma-Centro de computo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/firma-Centro de computo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/firma-Centro de informacion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/firma-Departamento  Desarrollo Academico.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/firma-Departamento  Desarrollo Academico.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/firma-Departamento Academico 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/firma-Departamento Academico.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/firma-Departamento Academico.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/firma-Laboratorio.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/firma-Laboratorio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/membrete-itsta.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/membrete-itsta.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sello-Centro de computo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sello-Centro de computo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sello-Centro de informacion.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sello-Departamento  Desarrollo Academico.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sello-Departamento  Desarrollo Academico.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sello-Departamento Academico 2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sello-Departamento Academico.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sello-Departamento Academico.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/sello-Laboratorio.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/sello-Laboratorio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/PDF/baja.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/PDF/baja.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/PDF/posgrado.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/PDF/posgrado.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/PDF/titulacion.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/PDF/titulacion.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/adeudos/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/adeudos/show.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="9535d496-4296-449c-9859-85dcd22d9472" name="Changes" comment="Changes in adeudos and departamentos controllers or views" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -227,10 +191,10 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="C:\xampp\htdocs\adeudosRoles-main\public\img" />
       <recent name="C:\xampp\htdocs\adeudosRoles\resources\views\dep_desarrolloacademico" />
       <recent name="C:\xampp\htdocs\adeudosRoles\resources\views\c_computo" />
       <recent name="C:\xampp\htdocs\adeudosRoles\resources\views\c_informacion" />
-      <recent name="C:\xampp\htdocs\adeudosRoles\resources\views\inicio" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -316,6 +280,17 @@
       <workItem from="1638307071691" duration="3123000" />
       <workItem from="1638392061794" duration="23613000" />
       <workItem from="1640912775312" duration="24505000" />
+      <workItem from="1641173177753" duration="4149000" />
+      <workItem from="1641235996373" duration="9333000" />
+      <workItem from="1641307665608" duration="8899000" />
+      <workItem from="1641344241647" duration="423000" />
+      <workItem from="1641393262056" duration="5813000" />
+      <workItem from="1641429697506" duration="1039000" />
+      <workItem from="1641486591526" duration="3389000" />
+      <workItem from="1641499934015" duration="2173000" />
+      <workItem from="1641508422739" duration="1580000" />
+      <workItem from="1641582624501" duration="429000" />
+      <workItem from="1641843042630" duration="5072000" />
     </task>
     <task id="LOCAL-00001" summary="SeederTablePermisos">
       <created>1631037384281</created>
@@ -505,31 +480,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changes in adeudos and departamentos controllers or views" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="443" y="247" key="#Notifications" timestamp="1641071291321">
-      <screen x="0" y="25" width="1440" height="791" />
+    <state x="358" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1641844188244">
+      <screen x="0" y="25" width="1440" height="804" />
     </state>
-    <state x="443" y="247" key="#Notifications/0.25.1440.791@0.25.1440.791" timestamp="1641071291321" />
-    <state x="445" y="225" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1639291952311">
-      <screen x="0" y="25" width="1440" height="794" />
+    <state x="358" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.804@0.25.1440.804" timestamp="1641844188244" />
+    <state x="442" y="346" key="NewPhpFileDialog" timestamp="1641843425924">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
-    <state x="445" y="225" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.794@0.25.1440.794" timestamp="1639291952311" />
-    <state x="458" y="180" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1641024973061">
-      <screen x="0" y="25" width="1440" height="797" />
-    </state>
-    <state x="458" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.788@0.25.1440.788" timestamp="1638565800540" />
-    <state x="458" y="178" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.791@0.25.1440.791" timestamp="1638304805693" />
-    <state x="458" y="179" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.794@0.25.1440.794" timestamp="1639292498996" />
-    <state x="458" y="180" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.25.1440.797@0.25.1440.797" timestamp="1641024973061" />
-    <state x="541" y="348" key="NewPhpFileDialog" timestamp="1639292077965">
-      <screen x="0" y="25" width="1440" height="794" />
-    </state>
-    <state x="541" y="345" key="NewPhpFileDialog/0.25.1440.788@0.25.1440.788" timestamp="1638076863123" />
-    <state x="541" y="346" key="NewPhpFileDialog/0.25.1440.791@0.25.1440.791" timestamp="1638076618461" />
-    <state x="541" y="348" key="NewPhpFileDialog/0.25.1440.794@0.25.1440.794" timestamp="1639292077965" />
-    <state x="541" y="349" key="NewPhpFileDialog/0.25.1440.797@0.25.1440.797" timestamp="1638157979450" />
-    <state x="320" y="143" key="Vcs.Push.Dialog.v2" timestamp="1641071501523">
-      <screen x="0" y="25" width="1440" height="791" />
-    </state>
-    <state x="320" y="143" key="Vcs.Push.Dialog.v2/0.25.1440.791@0.25.1440.791" timestamp="1641071501523" />
+    <state x="442" y="346" key="NewPhpFileDialog/0.25.1440.801@0.25.1440.801" timestamp="1641843425924" />
   </component>
 </project>

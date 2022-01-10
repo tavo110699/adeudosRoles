@@ -10,8 +10,9 @@
     <title>{{$infoAlumno->NumControl}}</title>
     <style>
         * {
-        /*
-         background-image: url("{{public_path()}}/img/membrete-itsta.png"); */
+            /*
+             background-image: url("
+        {{public_path()}} /img/membrete-itsta.png"); */
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center center;
@@ -82,8 +83,7 @@
                 <b>CENTRO DE INFORMACIÓN</b>
                 <br>
                 <img src="{{public_path()}}/img/{{$departamentos[0]->firma}}" class="primary">
-                <div class="secondary"
-                     style=" background-image: url({{public_path()}}/img/{{$departamentos[0]->sello}});"></div>
+                <img src="{{public_path()}}/img/{{$departamentos[0]->sello}}" class="secondary">
 
                 <p>{{$departamentos[0]->nombreEncargado}} {{$departamentos[0]->apellidoPEncargado}} {{$departamentos[0]->apellidoMEncargado}}</p>
                 <hr style=" margin-left: 0.5cm; margin-right: 0.5cm; ">
@@ -94,9 +94,7 @@
                 <b>CENTRO DE COMPUTO</b>
                 <br>
                 <img src="{{public_path()}}/img/{{$departamentos[1]->firma}}" class="primary">
-                <div class="secondary"
-                     style=" background-image: url({{public_path()}}/img/{{$departamentos[1]->sello}});"></div>
-
+                <img x class="secondary">
                 <p>{{$departamentos[1]->nombreEncargado}} {{$departamentos[1]->apellidoPEncargado}} {{$departamentos[1]->apellidoMEncargado}}</p>
                 <hr style=" margin-left: 0.5cm; margin-right: 0.5cm; ">
                 <p>Nombre y firma</p>
@@ -106,8 +104,7 @@
             <td style="  border: 1px solid black; border-collapse: collapse; border-radius: 1cm;">
                 <b style="font-size: 14px;">DEPARTAMENTO DESARROLLO ACADÉMICO</b><br>
                 <img src="{{public_path()}}/img/{{$departamentos[2]->firma}}" class="primary">
-                <div class="secondary"
-                     style=" background-image: url({{public_path()}}/img/{{$departamentos[2]->sello}});"></div>
+                <img src="{{public_path()}}/img/{{$departamentos[2]->sello}}" class="secondary">
 
                 <p>{{$departamentos[2]->nombreEncargado}} {{$departamentos[2]->apellidoPEncargado}} {{$departamentos[2]->apellidoMEncargado}}</p>
                 <hr style=" margin-left: 0.5cm; margin-right: 0.5cm; ">
@@ -117,8 +114,7 @@
             <td style="  border: 1px solid black; border-collapse: collapse; border-radius: 1cm;">
                 <b>DEPARTAMENTO ACADÉMICO</b><br>
                 <img src="{{public_path()}}/img/{{$departamentos[3]->firma}}" class="primary">
-                <div class="secondary"
-                     style=" background-image: url({{public_path()}}/img/{{$departamentos[3]->sello}});"></div>
+                <img src="{{public_path()}}/img/{{$departamentos[3]->sello}}" class="secondary">
 
                 <p>{{$departamentos[3]->nombreEncargado}} {{$departamentos[3]->apellidoPEncargado}} {{$departamentos[3]->apellidoMEncargado}}</p>
                 <hr style=" margin-left: 0.5cm; margin-right: 0.5cm; ">
@@ -129,8 +125,7 @@
             <td style="  border: 1px solid black; border-collapse: collapse; border-radius: 1cm;">
                 <b>LABORATORIO</b><br>
                 <img src="{{public_path()}}/img/{{$departamentos[4]->firma}}" class="primary">
-                <div class="secondary"
-                     style=" background-image: url({{public_path()}}/img/{{$departamentos[4]->sello}});"></div>
+                <img src="{{public_path()}}/img/{{$departamentos[4]->sello}}" class="secondary">
 
                 <p>{{$departamentos[4]->nombreEncargado}} {{$departamentos[4]->apellidoPEncargado}} {{$departamentos[4]->apellidoMEncargado}}</p>
                 <hr style=" margin-left: 0.5cm; margin-right: 0.5cm; ">
@@ -140,8 +135,7 @@
             <td style="  border: 1px solid black; border-collapse: collapse; border-radius: 1cm;">
                 <b>RECURSOS MATERIALES</b><br>
                 <img src="{{public_path()}}/img/{{$departamentos[5]->firma}}" class="primary">
-                <div class="secondary"
-                     style=" background-image: url({{public_path()}}/img/{{$departamentos[5]->sello}});"></div>
+                <img src="{{public_path()}}/img/{{$departamentos[5]->sello}}" class="secondary">
 
                 <p>{{$departamentos[5]->nombreEncargado}} {{$departamentos[5]->apellidoPEncargado}} {{$departamentos[5]->apellidoMEncargado}}</p>
                 <hr style=" margin-left: 0.5cm; margin-right: 0.5cm; ">
@@ -152,8 +146,7 @@
             <td style="  border: 1px solid black; border-collapse: collapse; border-radius: 1cm;">
                 <b>DEPARTAMENTO EXTRAESCOLAR</b><br>
                 <img src="{{public_path()}}/img/{{$departamentos[6]->firma}}" class="primary">
-                <div class="secondary"
-                     style=" background-image: url({{public_path()}}/img/{{$departamentos[6]->sello}});"></div>
+                <img src="{{public_path()}}/img/{{$departamentos[6]->sello}}" class="secondary">
 
                 <p>{{$departamentos[6]->nombreEncargado}} {{$departamentos[6]->apellidoPEncargado}} {{$departamentos[6]->apellidoMEncargado}}</p>
                 <hr style=" margin-left: 0.5cm; margin-right: 0.5cm; ">
@@ -162,8 +155,7 @@
             <td style="  border: 1px solid black; border-collapse: collapse; border-radius: 1cm;">
                 <b>DEPARTAMENTO RECURSOS FINANCIEROS</b><br>
                 <img src="{{public_path()}}/img/{{$departamentos[7]->firma}}" class="primary">
-                <div class="secondary"
-                     style=" background-image: url({{public_path()}}/img/{{$departamentos[7]->sello}});"></div>
+                <img src="{{public_path()}}/img/{{$departamentos[7]->sello}}" class="secondary">
 
                 <p>{{$departamentos[7]->nombreEncargado}} {{$departamentos[7]->apellidoPEncargado}} {{$departamentos[7]->apellidoMEncargado}}</p>
                 <hr style=" margin-left: 0.5cm; margin-right: 0.5cm; ">
@@ -172,8 +164,7 @@
             <td style="  border: 1px solid black; border-collapse: collapse; border-radius: 1cm;">
                 <b>DEPARTAMENTO SERVICIOS ESCOLARES</b><br>
                 <img src="{{public_path()}}/img/{{$departamentos[8]->firma}}" class="primary">
-                <div class="secondary"
-                     style=" background-image: url({{public_path()}}/img/{{$departamentos[8]->sello}});"></div>
+                <img src="{{public_path()}}/img/{{$departamentos[8]->sello}}" class="secondary">
 
                 <p>{{$departamentos[8]->nombreEncargado}} {{$departamentos[8]->apellidoPEncargado}} {{$departamentos[8]->apellidoMEncargado}}</p>
                 <hr style=" margin-left: 0.5cm; margin-right: 0.5cm; ">
